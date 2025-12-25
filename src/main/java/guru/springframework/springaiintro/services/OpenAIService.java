@@ -1,0 +1,15 @@
+package guru.springframework.springaiintro.services;
+
+import guru.springframework.springaiintro.model.Answer;
+import guru.springframework.springaiintro.model.GetCapitalRequest;
+import guru.springframework.springaiintro.model.GetCapitalResponse;
+import guru.springframework.springaiintro.model.Question;
+
+public interface OpenAIService {
+
+	String getAnwer(String question);
+	Answer getAnswer(Question question);
+	Answer getCapital(GetCapitalRequest getCapitalRequest);
+	GetCapitalResponse getCapitalWithFormatResponse(GetCapitalRequest getCapitalRequest);
+	Answer getCapitalWithInfo(GetCapitalRequest getCapitalRequest);
+}
